@@ -207,25 +207,17 @@
           <div class="experience__box">
             <ul class="experience__list">
               <!-- Insira a logo de seu local de trabalho -->
-              <li class="experience__item__img"><img src="assets/empresa.png" alt="Empresa Logo" /></li>
+              <li class="experience__item__img"><img src="./assets/picpay.png" alt="Empresa Logo" /></li>
               <li class="experience__item__title"><h4>Desenvolvedor Front-End</h4></li>
-              <li class="experience__item__subtitle"><p>Empresa X - 2019/2020</p></li>
+              <li class="experience__item__subtitle"><p>PicPay - 2022/2023</p></li>
             </ul>
           </div>
           <div class="experience__box">
             <ul class="experience__list">
               <!-- Insira a logo de seu local de trabalho -->
-              <li class="experience__item__img"><img src="assets/empresa.png" alt="Empresa Logo" /></li>
+              <li class="experience__item__img"><img src="assets/descoinvest.png" alt="Empresa Logo" /></li>
               <li class="experience__item__title"><h4>Desenvolvedor Fullstack</h4></li>
-              <li class="experience__item__subtitle"><p>Empresa Y - 2020/2022</p></li>
-            </ul>
-          </div>
-          <div class="experience__box">
-            <ul class="experience__list">
-              <!-- Insira a logo de seu local de trabalho -->
-              <li class="experience__item__img"><img src="assets/empresa.png" alt="Empresa Logo" /></li>
-              <li class="experience__item__title"><h4>Desenvolvedor Fullstack</h4></li>
-              <li class="experience__item__subtitle"><p>Empresa Z - 2022/Presente</p></li>
+              <li class="experience__item__subtitle"><p>Descoinvest - 2023/2023</p></li>
             </ul>
           </div>
         </div>
@@ -233,20 +225,29 @@
 
       <!-- Sessão de Contato -->
       <section class="contact" id="contato">
-        <h3 class="contact__title">Entre em contato</h3>
-        <form action="#" method="post">
+        <form id="contactForm" action="#" method="post">
+          <img src="./assets/contact_image.png" alt="" />
           <div class="contact__container">
-            <div class="contact__name">
-              <label for="name">Nome</label>
+            <div class="contact__container__title">
+              <h2 class="contact__title">Contato</h2>
+              <p>Quer entrar em contato comigo?</p>
+              <span>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</span>
+            </div>
+            <div class="contact__box">
               <input type="text" id="name" name="name" required />
+              <label for="name" class="placeholder">Nome</label>
             </div>
-            <div class="contact__email">
-              <label for="email">Email</label>
+            <div class="contact__box">
               <input type="email" id="email" name="email" required />
+              <label for="email" class="placeholder">Email</label>
             </div>
-            <div class="contact__message">
-              <label for="message">Mensagem</label>
+            <div class="contact__box">
+              <input type="text" id="subject" name="subject" required />
+              <label for="subject" class="placeholder">Assunto</label>
+            </div>
+            <div class="contact__box">
               <textarea id="message" name="message" rows="4" required></textarea>
+              <label for="message" class="placeholder">Mensagem</label>
             </div>
             <div class="contact__submit">
               <input type="submit" value="Enviar" />
@@ -254,6 +255,14 @@
           </div>
         </form>
       </section>
+
+      <section class="footer">
+        <footer>
+          <p>Desenvolvido por Pierre Souza</p>
+          2024
+        </footer>
+      </section>
     </div>
   </body>
+  <script src="validate.js"></script>
 </html>
